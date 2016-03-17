@@ -27,7 +27,7 @@ if test "$PHP_FACEDETECT" != "no"; then
   AC_CHECK_HEADER([$FACEDETECT_DIR/include/opencv2/core/core_c.h], [], AC_MSG_ERROR('opencv/core/core_c.h' header not found))
   AC_CHECK_HEADER([$FACEDETECT_DIR/include/opencv2/imgproc/imgproc_c.h], [], AC_MSG_ERROR('opencv/imgproc/imgproc_c.h' header not found))
   AC_CHECK_HEADER([$FACEDETECT_DIR/include/opencv2/photo/photo_c.h], [], AC_MSG_ERROR('opencv/photo/photo_c.h' header not found))
-  AC_CHECK_HEADER([$FACEDETECT_DIR/include/opencv2/objdetect/objdetect_c.h], [], AC_MSG_ERROR('opencv/objdetect/objdetect_c.h' header not found))
+  AC_CHECK_HEADER([$FACEDETECT_DIR/include/opencv2/objdetect/objdetect.hpp], [], AC_MSG_ERROR('opencv/objdetect/objdetect.hpp' header not found))
 
   PHP_CHECK_LIBRARY(opencv_core, cvLoad,
   [
